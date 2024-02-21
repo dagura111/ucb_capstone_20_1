@@ -39,9 +39,9 @@ Implementing machine learning techniques to improve the accuracy of default pred
 
 #### Outline of project
 
-- [Link to notebook]
-- [Link to data]
+- [Link to [notebook](https://github.com/dagura111/ucb_capstone_20_1/blob/main/try-it-20.1.ipynb)]
+- [Link to [data](https://github.com/dagura111/ucb_capstone_20_1/blob/main/data/loan.csv)]
 
-(Because of the size of data, I uploaded the partial data to the git repo. Link to the kaggle for complete set of data)
+(Because of the size of data, I uploaded the partial data to the git repo. Link to the kaggle(https://www.kaggle.com/datasets/adarshsng/lending-club-loan-data-csv) for complete set of data)
 
 ##### Contact and Further Information

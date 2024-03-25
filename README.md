@@ -3,7 +3,7 @@
 Author: Abhinav Dagur
 
 #### Executive summary
-This project focuses on analyzing loan data to identify key factors that influence loan default rates. Through exploratory data analysis (EDA), we examined various applicant and loan features to determine their impact on the likelihood of loan defaults.
+The objective of this project was to develop predictive models capable of accurately identifying potential loan defaults. This is crucial for financial institutions to mitigate risks associated with lending and to make informed decisions.
 
 #### Rationale
 Understanding the factors that contribute to loan defaults can help financial institutions improve risk assessment models, minimize losses, and offer better terms to low-risk applicants. This analysis is crucial for anyone involved in the lending industry or interested in credit risk assessment.
@@ -16,25 +16,26 @@ The analysis was conducted using loan data, which includes both applicant featur
 
 #### Methodology
 The methodology involved:
-
 Filtering the dataset for relevant features.
 Encoding categorical variables for correlation analysis.
 Visualizing distributions and correlations between loan status and numerical features.
 Summarizing key insights regarding the impact of various features on loan defaults.
+#### Model Selection and Development
+Multiple models were evaluated to address the prediction task, including Random Forest, Logistic Regression, and Gradient Boosting Machines (XGBoost). These models were chosen for their proven track record in handling binary classification problems effectively.
+
+#### Baseline Models: 
+Initial models were trained with default hyperparameters to establish a performance baseline.
+#### Optimized Models: 
+Following baseline model evaluation, we employed RandomizedSearchCV for hyperparameter tuning, seeking to improve model performance by exploring a wide range of parameter configurations.
+#### Model Evaluation
+Model performance was rigorously evaluated using several key metrics: Accuracy, Precision, Recall, F1 Score, and ROC-AUC. These metrics provided a comprehensive view of each model's strengths and weaknesses, particularly in terms of their ability to balance the trade-off between sensitivity and specificity.
 
 
 #### Results
-Key findings include:
-
-Interest rate, DTI (Debt to Income Ratio), and utilization of revolving accounts are significant predictors of loan defaults.
-Applicants with higher annual incomes tend to have lower default rates.
-Lower loan grades are associated with higher defaults.
-A history of bankruptcy is a strong indicator of potential default.
+The GBM (XGBoost) models, both baseline and optimized, outperformed other models across all evaluation metrics, with the optimized version showing slight improvements over the baseline. The Random Forest model saw a decrease in performance upon optimization, indicating possible overfitting with the default parameters. Logistic Regression models demonstrated modest performance, with minimal differences between the baseline and optimized versions.
 
 #### Next steps
-Building predictive models to quantify the impact of these features on default risk.
-Exploring additional features that may influence loan performance.
-Implementing machine learning techniques to improve the accuracy of default predictions.
+Further research could explore more advanced feature engineering techniques, alternative ensemble methods, and deep learning models to assess their potential for improving prediction accuracy. Additionally, investigating model interpretability tools can provide valuable insights into the decision-making process, enhancing transparency and trust in the predictive models.
 
 
 #### Outline of project
